@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Img">
+
+    <Button
+        android:id="@+id/btnImageSend"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@android:drawable/ic_menu_send"
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginEnd="4dp"
+        android:layout_x="10dp"
+        android:layout_y="650dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/btnImageDelete"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@android:drawable/ic_delete"
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_x="110dp"
+        android:layout_y="650dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <ImageView
+        android:id="@+id/imgVwSelected"
+        android:layout_width="match_parent"
+        android:layout_height="574dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_x="0dp"
+        android:layout_y="61dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="13dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+</AbsoluteLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--상단 버튼 -->
+    <Button
+        android:id="@+id/btnFind"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_from_server_24dp"
+        android:text="From Server "
+        android:layout_x="10dp"
+        android:layout_y="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/makenewdir"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_update_24dp"
+        android:text="Update Folders "
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_x="150dp"
+        android:layout_y="20dp" />
+
+    <Button
+        android:id="@+id/btnAlbum"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_arrow_back_24dp"
+        android:text="Back "
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_x="310dp"
+        android:layout_y="20dp" />
+
+    <!-- 하단 버튼-->
+    <Button
+        android:id="@+id/btnImageSend"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@android:drawable/ic_menu_send"
+        android:text="Send "
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginEnd="4dp"
+        android:layout_x="10dp"
+        android:layout_y="650dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="667dp"
+        android:icon="@drawable/ic_send_24dp"/>
+
+    <Button
+        android:id="@+id/btnImageDelete"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@android:drawable/ic_delete"
+        android:text="Delete "
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_x="102dp"
+        android:layout_y="650dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/btnTakePic"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_x="192dp"
+        android:layout_y="650dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_add_a_photo_24dp"
+        android:text="Take Pic "
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/btnImageSelection"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_photo_library_24dp"
+        android:text="My Gallery "
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_x="285dp"
+        android:layout_y="650dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <ImageView
+        android:id="@+id/imgVwSelected"
+        android:layout_width="match_parent"
+        android:layout_height="574dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_x="0dp"
+        android:layout_y="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="13dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+    <!-- 이미지뷰 & 버튼 -->
+
+    <ImageView
+        android:id="@+id/iv_main1"
+        android:layout_width="194dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_x="5dp"
+        android:layout_y="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="13dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:src="@drawable/animal_thumb"
+        />
+
+    <!--android:layout_x="70dp"-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_x="5dp"
+        android:layout_y="275dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="동물"
+        android:textSize="15.5sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <TextView
+        android:id="@+id/textView1_1"
+        android:layout_x="5dp"
+        android:layout_y="292dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_main2"
+        android:layout_width="194dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_x="205dp"
+        android:layout_y="82dp"
+        android:src="@drawable/scenery_thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="13dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_x="210dp"
+        android:layout_y="275dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="풍경"
+        android:textSize="15.5sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+
+    <TextView
+        android:id="@+id/textView2_1"
+        android:layout_x="210dp"
+        android:layout_y="292dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_main3"
+        android:layout_width="194dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_x="5dp"
+        android:layout_y="320dp"
+        android:src="@drawable/food_thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="13dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_x="5dp"
+        android:layout_y="522dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음식"
+        android:textSize="15.5sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <TextView
+        android:id="@+id/textView3_1"
+        android:layout_x="5dp"
+        android:layout_y="539dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_main4"
+        android:layout_width="194dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_x="205dp"
+        android:layout_y="322dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="13dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_x="210dp"
+        android:layout_y="521dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 사진"
+        android:textSize="15.5sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <TextView
+        android:id="@+id/textView4_1"
+        android:layout_x="210dp"
+        android:layout_y="539dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+</AbsoluteLayout>
