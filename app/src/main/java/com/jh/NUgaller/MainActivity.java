@@ -38,7 +38,6 @@ import com.google.firebase.iid.InstanceIdResult;
 
 import static com.jh.fileupload.FileManageUtils.setDirEmpty;
 
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     //FCM Alarm
@@ -104,7 +103,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textView3_1 =(TextView)findViewById(R.id.textView3_1);
         textView4_1 =(TextView)findViewById(R.id.textView4_1);
 
-
         imgVwSelected = (ImageView)findViewById(R.id.imgVwSelected);
 
         iv_main1.setOnClickListener(this);
@@ -168,7 +166,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 FileUploadUtils.goSend(tempSelectFile);
             }
         });
-
 
         // 선택한 이미지 삭제
         btnImageDelete = findViewById(R.id.btnImageDelete);

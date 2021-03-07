@@ -35,7 +35,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             // 알람 받자마자 삭제하고 다운 test
             setDirEmpty("/serverImg/");
             makeNewDir("/serverImg/","http://ip주소:port번호/result");
-            // 여기까지 test
 
             Intent intent = new Intent(this, FindActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -67,7 +66,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         String path = Environment.getExternalStorageDirectory().getAbsolutePath() + file_path; //폴더 경로
         File Folder = new File(path);
 
-        // 해당 디렉토리가 없을경우 디렉토리를 생성합니다.
+        // 해당 디렉토리가 없을경우 디렉토리를 생성
         //if (!Folder.exists()) {
         Folder.mkdir(); //폴더 생성합니다.
         //Toast.makeText(getApplicationContext(), "폴더가 새로고침 되었습니다 : " + path, Toast.LENGTH_LONG).show();
@@ -78,8 +77,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             e.printStackTrace();
         }
 
-        //}else {
-        //}
     } // end of makeNewDir
 
     //

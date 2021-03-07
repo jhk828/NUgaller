@@ -49,7 +49,4 @@ public class FileManageUtils {
             System.out.println("           디렉토리 비움       " + dirName);
         }
     }
-
-
-
 }

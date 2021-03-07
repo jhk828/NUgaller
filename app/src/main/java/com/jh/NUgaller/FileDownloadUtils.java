@@ -16,7 +16,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import static com.jh.fileupload.FileManageUtils.saveBitmaptoJpg;
+import static com.jh.NUgaller.FileManageUtils.saveBitmaptoJpg;
 
 public class FileDownloadUtils {
 
